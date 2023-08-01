@@ -1,0 +1,11 @@
+html {
+  font-size: 5vw;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 1.25vw;
+  }
+
+  // @include media-breakpoint-up(xl) {
+  //   font-size: 0.8334vw;
+  // }
+}

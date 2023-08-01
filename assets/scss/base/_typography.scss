@@ -1,0 +1,39 @@
+body {
+  @include text-body;
+
+  color: $color-black;
+  background-color: $color-white;
+  cursor: default;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1,
+.h1 {
+  @include h1;
+}
+
+h2,
+.h2 {
+  @include h2;
+}
+
+h3,
+.h3 {
+  @include h3;
+}
+
+.text-lead {
+  @include text-lead;
+}
+
+.text-body {
+  @include text-body;
+}

@@ -1,0 +1,19 @@
+@mixin my-scrollbar() {
+  scrollbar-width: thin;
+  scrollbar-color: $color-red rgba($color-red, 0.3);
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: $color-red;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 6px;
+    background: rgba($color-red, 0.3);
+  }
+}

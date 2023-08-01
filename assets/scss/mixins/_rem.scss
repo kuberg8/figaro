@@ -1,0 +1,12 @@
+$base-value: 18 !default;
+
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+@function rem($size) {
+  // stylelint-disable scss/dollar-variable-pattern
+  $remSize: calc($size / $base-value);
+
+  @return #{$remSize}rem;
+}
