@@ -11,7 +11,7 @@
     ]"
   >
     <slot>{{ text }}</slot>
-    <Icon v-if="variant === 'default'" name="arrow" />
+    <Icon v-if="variant === 'default'" name="arrow" :class="$style.icon" />
   </button>
 </template>
 
@@ -51,6 +51,11 @@ export default {
   &.secondary {
     padding: 0 rem(47);
     border: 2px solid $color-red;
+  }
+
+  .icon {
+    width: rem(20);
+    height: rem(20);
   }
 }
 </style>
