@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <h1>Мы ценим Ваше время и комфорт! Запишитесь на сервис Nissan онлайн</h1>
+    <h1>Мы ценим Ваше время и комфорт!<br>Запишитесь на сервис Nissan онлайн</h1>
     <div :class="$style.factoidList">
       <Factoid v-for="(item, i) in facts" :key="i" :data="item" :class="$style.factoidItem" />
     </div>
